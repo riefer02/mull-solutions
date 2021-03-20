@@ -4,6 +4,7 @@ import {
   faDatabase,
   faBalanceScaleLeft,
   faDraftingCompass,
+  faSimCard,
 } from "@fortawesome/free-solid-svg-icons";
 import styles from "../styles/Cards.module.scss";
 
@@ -33,10 +34,18 @@ export default function CardDeck() {
         "Every engineering firm knows that taking risks is a necessity for growth. Creating strategic risks allow for maximum improvement while curbing dynamic loss.",
       rating: 99,
     },
+    {
+      id: 3,
+      title: "Corporate Espionage",
+      icon: faSimCard,
+      text:
+        "Data is vital to the success of your company and obtaining the enemy's is vital to achieving total control of the market.",
+      rating: 99,
+    },
   ];
 
   return (
-    <div className="bg-gray-100 border-opacity-50 p-2 md:px-12 md:p-8 mb-12">
+    <div className="bg-gray-100 border-opacity-50 p-2 md:px-12 md:p-8 mb-12 shadow-lg">
       <div className={"my-1 " + styles.cards}>
         {services.map((i) => {
           return <Card content={i} key={i.id}></Card>;

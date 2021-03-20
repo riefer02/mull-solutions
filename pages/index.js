@@ -4,19 +4,20 @@ import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import Panel from "../components/Panel";
 import CardDeck from "../components/CardDeck";
-import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
-    <div className="container mx-auto bg-gray-500">
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Mull Solutions — Advanced Insights</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
       <Hero />
-      <Panel />
-      <CardDeck />
+      <div className="container mx-auto">
+        <Panel />
+        <CardDeck />
+      </div>
       <Footer />
     </div>
   );

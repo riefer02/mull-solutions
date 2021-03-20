@@ -23,7 +23,7 @@ export default function Panel() {
             </button>
           </div>
         </div>
-        <div className="flex justify-center items-center w-full bg-cover lg:h-auto lg:min-h-full lg:w-1/3 order-1 rounded-b-lg rounded-t-none lg:rounded-l-lg lg:rounded-r-none flex-grow">
+        <div className="sm:p-12 lg:p-0 flex justify-center items-center w-full bg-cover lg:h-auto lg:min-h-full lg:w-1/3 order-1 rounded-b-lg rounded-t-none lg:rounded-l-lg lg:rounded-r-none flex-grow">
           <img
             src="https://flintco.com/wp-content/uploads/2019/12/TexasTech_ESBII_24-1340x890.jpg"
             className="rounded-xl shadow-md mb-10 lg:my-0"
