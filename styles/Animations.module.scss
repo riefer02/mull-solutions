@@ -1,0 +1,33 @@
+@import "./Variables.module.scss";
+
+// Slide Animation: Button
+
+.slide {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130%;
+    height: 55px;
+    background-color: $color-orange;
+    transform: translate(-110%, 0) skew(-30deg);
+    transition: 0.5s;
+  }
+
+  &:hover::before {
+    transform: translate(-5%, 0) skew(-15deg);
+  }
+
+  &:hover &\Text {
+    color: #fff;
+  }
+
+  &\Text {
+    position: relative;
+    transition: 0.5s;
+  }
+}

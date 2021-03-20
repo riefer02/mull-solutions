@@ -1,24 +1,22 @@
 import React from "react";
+import styles from "../styles/Hero.module.scss";
 
 export default function Hero() {
   return (
     <div
-      className="relative pt-16 pb-32 flex content-center items-center justify-center"
+      className="relative pt-40 pb-32 flex content-center items-center justify-center"
       style={{
         minHeight: "50vh",
       }}
     >
       <div
-        className="absolute top-0 w-full h-full bg-center bg-cover"
+        className="absolute top-0 w-full h-full bg-center bg-cover shadow-md"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')",
         }}
       >
-        <span
-          id="blackOverlay"
-          className="w-full h-full absolute opacity-75 bg-black"
-        ></span>
+        <span className="w-full h-full absolute opacity-75 bg-black"></span>
       </div>
       <div className="container relative mx-auto">
         <div className="items-center flex flex-wrap">

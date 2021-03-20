@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/NavBar.module.scss";
+import animation from "../styles/Animations.module.scss";
 
 export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -7,6 +8,7 @@ export default function Navbar({ fixed }) {
   const toggleNav = () => {
     setNavbarOpen(!navbarOpen);
   };
+
   return (
     <>
       <nav className="fixed z-10 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-gray-500">
@@ -14,8 +16,8 @@ export default function Navbar({ fixed }) {
           <div className="px-4 mx-auto flex flex-wrap items-center justify-between">
             <div className="w-full relative flex justify-between items-center lg:static">
               <a
-                className="text-2xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
-                href="#pablo"
+                className="text-2xl relative z-10 font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
+                href="#"
               >
                 Mull Solutions
               </a>
@@ -36,8 +38,6 @@ export default function Navbar({ fixed }) {
                 </div>
               </button>
             </div>
-            {/* Main Drawer */}
-
             <div
               className={
                 "lg:flex flex-grow items-center flex " +
@@ -46,29 +46,42 @@ export default function Navbar({ fixed }) {
                 (navbarOpen ? styles.isActive : "")
               }
             >
-              <ul className="flex flex-col list-none justify-start items-start w-full h-full p-12">
-                <li className="nav-item">
+              <ul className="flex flex-col list-none justify-start items-start w-full h-full mt-32 p-4 md:p-12">
+                <li>
                   <a
-                    className="px-3 py-2 flex items-center text-3xl uppercase font-bold leading-snug text-white hover:opacity-75"
-                    href="#pablo"
+                    className={
+                      animation.slide +
+                      " text-white px-3 py-2 flex items-center text-3xl md:text-3xl uppercase font-bold leading-snug  "
+                    }
+                    href="#"
                   >
-                    <span className="ml-2">About</span>
+                    <span className={animation.slideText + " mb-3"}>About</span>
                   </a>
                 </li>
-                <li className="nav-item">
+                <li>
                   <a
-                    className="px-3 py-2 flex items-center text-3xl uppercase font-bold leading-snug text-white hover:opacity-75"
-                    href="#pablo"
+                    className={
+                      animation.slide +
+                      " text-white px-3 py-2 flex items-center text-3xl uppercase font-bold leading-snug  "
+                    }
+                    href="#"
                   >
-                    <span className="ml-2">Services</span>
+                    <span className={animation.slideText + " mb-3"}>
+                      Services
+                    </span>
                   </a>
                 </li>
-                <li className="nav-item">
+                <li>
                   <a
-                    className="px-3 py-2 flex items-center text-3xl uppercase font-bold leading-snug text-white hover:opacity-75"
-                    href="#pablo"
+                    className={
+                      animation.slide +
+                      " text-white px-3 py-2 flex items-center text-3xl uppercase font-bold leading-snug  "
+                    }
+                    href="#"
                   >
-                    <span className="ml-2">Clients</span>
+                    <span className={animation.slideText + " mb-3"}>
+                      Clients
+                    </span>
                   </a>
                 </li>
               </ul>
