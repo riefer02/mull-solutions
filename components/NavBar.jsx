@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Navbar.module.scss";
+import styles from "../styles/NavBar.module.scss";
 
 export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
