@@ -31,13 +31,15 @@ export default function Card({ content }) {
 
       <footer className="flex flex-col items-center justify-between leading-none p-4 sm:p-6 sm:pb-2 md:p-4">
         <a className="flex items-center no-underline" href="#">
-          <p className="text-sm lg:text-base h-28 min-h-40">{text}</p>
+          <p className="text-sm lg:text-base h-28 min-h-40 leading-relaxed">
+            {text}
+          </p>
         </a>
         <div className={animation.slide + " flex justify-center mt-auto"}>
           <button
             className={
               animation.slideText +
-              " underline font-bold py-2 px-4 hover:shadow-lg focus:outline-none focus:bg-gray-300 focus:shadow-md"
+              " underline text-lg font-bold py-2 px-4 hover:shadow-lg focus:outline-none focus:bg-gray-300 focus:shadow-md"
             }
           >
             Learn More
