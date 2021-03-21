@@ -1,0 +1,20 @@
+@import "./Variables.module.scss";
+
+.footer {
+  &\Link {
+    padding: 0 3px;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+.footer {
+  &\SocialLink {
+    background-color: $color-white;
+    color: $color-blue--light;
+    position: relative;
+    bottom: 2px;
+  }
+}

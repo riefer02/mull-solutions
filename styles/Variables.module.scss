@@ -4,8 +4,11 @@ $color-gray: #6b7280; // Slate Gray
 $color-creme: #faf0ca; // Lemon Meringue
 $color-purple: #1a1423; // Xiketic
 
-$color-grey--dark: #5d5c61;
-$color-grey--light: #379683;
+$color-black: rgba(31, 41, 55, var(--tw-text-opacity));
+$color-white: #fff;
+
+$color-gray--dark: #5d5c61;
+$color-gray--light: #379683;
 $color-blue--light: #7395ae;
 $color-blue--dark: #557a95;
 $color-brown--light: #b1a296;

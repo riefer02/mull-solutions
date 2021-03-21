@@ -1,6 +1,7 @@
 @import "./Variables.module.scss";
 
 // Slide Animation: Button
+// Parent: slide, Child: slideText
 
 .slide {
   position: relative;
@@ -13,7 +14,7 @@
     left: 0;
     width: 130%;
     height: 55px;
-    background-color: $color-orange;
+    background-color: $color-blue--dark;
     transform: translate(-110%, 0) skew(-30deg);
     transition: 0.5s;
   }
@@ -23,7 +24,69 @@
   }
 
   &:hover &\Text {
-    color: #fff;
+    color: $color-white;
+
+    & > span {
+      &::before {
+        box-shadow: 2px 2px 0 $color-white, 3px 2px 0 $color-white,
+          2px 3px 0 $color-white, 3px 3px 0 $color-white;
+      }
+      &::after {
+        color: $color-white;
+      }
+    }
+  }
+
+  &:hover > span::before,
+  &:hover > span::after {
+    color: $color-white;
+  }
+
+  &\Text {
+    position: relative;
+    transition: 0.5s;
+  }
+}
+
+// Slide Animation: Footer Link
+
+.slideFooter {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 25px;
+    background-color: $color-blue--dark;
+    transform: translate(-110%, 0) skew(-30deg);
+    transition: 0.5s;
+  }
+
+  &:hover::before {
+    transform: translate(-5%, 0) skew(-15deg);
+  }
+
+  &:hover &\Text {
+    color: $color-white;
+
+    & > span {
+      &::before {
+        box-shadow: 2px 2px 0 $color-white, 3px 2px 0 $color-white,
+          2px 3px 0 $color-white, 3px 3px 0 $color-white;
+      }
+      &::after {
+        color: $color-white;
+      }
+    }
+  }
+
+  &:hover > span::before,
+  &:hover > span::after {
+    color: $color-white;
   }
 
   &\Text {

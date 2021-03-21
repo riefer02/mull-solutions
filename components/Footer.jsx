@@ -1,4 +1,12 @@
 import React from "react";
+import animation from "../styles/Animations.module.scss";
+import styles from "../styles/Footer.module.scss";
+import {
+  faLinkedin,
+  faInstagram,
+  faFacebookSquare,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
   return (
@@ -8,51 +16,45 @@ export default function Footer() {
           <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
             <h5 className="text-xl font-bold mb-6">Features</h5>
             <ul className="list-none footer-links">
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Cool stuff
                 </a>
               </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Random feature
                 </a>
               </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Team feature
                 </a>
               </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
-                  Stuff for developers
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
+                  Developer talk
                 </a>
               </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Another one
                 </a>
               </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Last time
                 </a>
               </li>
@@ -61,35 +63,31 @@ export default function Footer() {
           <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0">
             <h5 className="text-xl font-bold mb-6">Resources</h5>
             <ul className="list-none footer-links">
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Resource
                 </a>
               </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Resource name
                 </a>
               </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Another resource
                 </a>
               </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Final resource
                 </a>
               </li>
@@ -98,35 +96,31 @@ export default function Footer() {
           <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
             <h5 className="text-xl font-bold mb-6">About</h5>
             <ul className="list-none footer-links">
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Team
                 </a>
               </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Locations
                 </a>
               </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Privacy
                 </a>
               </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Terms
                 </a>
               </li>
@@ -135,27 +129,24 @@ export default function Footer() {
           <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
             <h5 className="text-xl font-bold mb-6">Help</h5>
             <ul className="list-none footer-links">
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Support
                 </a>
               </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Help Center
                 </a>
               </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
+              <li
+                className={animation.slideFooter + " mb-2 " + styles.footerLink}
+              >
+                <a href="#" className={animation.slideText}>
                   Contact Us
                 </a>
               </li>
@@ -168,21 +159,30 @@ export default function Footer() {
             <div className="flex sm:justify-center xl:justify-start">
               <a
                 href=""
-                className="w-8 h-8 border-2 border-gray-400 rounded-full text-center py-1 text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600"
+                className="w-8 h-8 border-2 overflow-hidden border-gray-400 rounded-full text-center py-1 text-gray-600 hover:shadow-md transition-shadow  "
               >
-                <i className="fab fa-facebook"></i>
+                <FontAwesomeIcon
+                  className={"fa-lg  " + styles.footerSocialLink}
+                  icon={faLinkedin}
+                />
               </a>
               <a
                 href=""
-                className="w-8 h-8  border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400"
+                className="w-8 h-8  border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:shadow-md transition-shadow  "
               >
-                <i className="fab fa-twitter"></i>
+                <FontAwesomeIcon
+                  className={"fa-lg  " + styles.footerSocialLink}
+                  icon={faInstagram}
+                />
               </a>
               <a
                 href=""
-                className="w-8 h-8  border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600"
+                className="w-8 h-8  border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:shadow-md transition-shadow  "
               >
-                <i className="fab fa-google-plus-g"></i>
+                <FontAwesomeIcon
+                  className={"fa-lg  " + styles.footerSocialLink}
+                  icon={faFacebookSquare}
+                />
               </a>
             </div>
           </div>

@@ -45,8 +45,16 @@ export default function CardDeck() {
   ];
 
   return (
-    <div className="bg-gray-100 border-opacity-50 p-2 md:px-12 md:p-8 mb-12 shadow-lg">
-      <div className={"my-1 " + styles.cards}>
+    <div className="bg-gray-100 border-opacity-50 p-2 md:px-12 md:p-8 mb-12 shadow-lg rounded-t-lg">
+      <div className="">
+        <h1 className="text-3xl text-center mt-4 mb-2 font-semibold">
+          Services and Technologies
+        </h1>
+        <h3 className="text-xs text-center italic">
+          Mull Solutions specializes in these four critical sectors:
+        </h3>
+      </div>
+      <div id="services" className={"my-1 " + styles.cards}>
         {services.map((i) => {
           return <Card content={i} key={i.id}></Card>;
         })}
