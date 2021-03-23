@@ -7,6 +7,10 @@
   position: relative;
   overflow: hidden;
 
+  &.slideLight::before {
+    background-color: $color-blue--light;
+  }
+
   &::before {
     content: "";
     position: absolute;

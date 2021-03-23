@@ -7,12 +7,14 @@ import {
   faFacebookSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logoUrl from "../public/mullsolutions1.svg";
+import logo from "../styles/Logo.module.scss";
 
 export default function Footer() {
   return (
     <footer className="footer-1 bg-gray-100 py-8 sm:py-12">
       <div className="container mx-auto px-4">
-        <div className="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
+        <div className="relative sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
           <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
             <h5 className="text-xl font-bold mb-6">Features</h5>
             <ul className="list-none footer-links">
@@ -186,6 +188,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
+          <img src={logoUrl} className={logo.footer} />
         </div>
       </div>
     </footer>

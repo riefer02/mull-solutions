@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "../styles/Hero.module.scss";
+import logoUrl from "../public/mullsolutions1.svg";
+import logo from "../styles/Logo.module.scss";
 
 export default function Hero() {
   return (
@@ -21,11 +23,12 @@ export default function Hero() {
       <div className="container relative mx-auto">
         <div className="items-center flex flex-wrap">
           <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <img src={logoUrl} className={logo.hero} />
             <div className="">
-              <h1 className="text-white font-semibold text-5xl">
+              <h1 className="text-white font-semibold text-5xl z-10 relative">
                 Get the job done right
               </h1>
-              <p className="mt-4 text-lg text-gray-300">
+              <p className="mt-4 text-lg text-gray-300 z-10 relative">
                 Mull solutions is a dynamic engineering firm that specializes in
                 analyzing data, advanced telemetrics, and meeting deadlines
                 ahead of schedule.

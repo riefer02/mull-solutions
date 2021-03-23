@@ -1,5 +1,7 @@
 import React from "react";
+import logoUrl from "../public/mullsolutions1.svg";
 import styles from "../styles/NavBar.module.scss";
+import logo from "../styles/Logo.module.scss";
 import animation from "../styles/Animations.module.scss";
 
 export default function Navbar({ fixed }) {
@@ -19,6 +21,7 @@ export default function Navbar({ fixed }) {
                 className="text-2xl relative z-10 font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
                 href="#"
               >
+                <img src={logoUrl} className={logo.navBar} />
                 Mull Solutions
               </a>
               <button
@@ -51,6 +54,8 @@ export default function Navbar({ fixed }) {
                   <a
                     className={
                       animation.slide +
+                      " " +
+                      animation.slideLight +
                       " text-white px-3 py-2 flex items-center text-3xl md:text-3xl uppercase font-bold leading-snug  "
                     }
                     href="#"
@@ -62,6 +67,8 @@ export default function Navbar({ fixed }) {
                   <a
                     className={
                       animation.slide +
+                      " " +
+                      animation.slideLight +
                       " text-white px-3 py-2 flex items-center text-3xl uppercase font-bold leading-snug  "
                     }
                     href="#"
@@ -75,6 +82,8 @@ export default function Navbar({ fixed }) {
                   <a
                     className={
                       animation.slide +
+                      " " +
+                      animation.slideLight +
                       " text-white px-3 py-2 flex items-center text-3xl uppercase font-bold leading-snug  "
                     }
                     href="#"
