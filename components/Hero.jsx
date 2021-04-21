@@ -25,10 +25,20 @@ export default function Hero() {
           <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
             <img src={logoUrl} className={logo.hero} />
             <div className="">
-              <h1 className="text-white font-semibold text-5xl z-10 relative">
+              <h1
+                className={
+                  "text-white font-semibold text-5xl z-10 relative" +
+                  styles.headerPrimaryText
+                }
+              >
                 Get the job done right
               </h1>
-              <p className="mt-4 text-lg text-gray-300 z-10 relative">
+              <p
+                className={
+                  "mt-4 text-lg text-gray-300 z-10 relative" +
+                  styles.headerSecondaryText
+                }
+              >
                 Mull solutions is a dynamic engineering firm that specializes in
                 analyzing data, advanced telemetrics, and meeting deadlines
                 ahead of schedule.
